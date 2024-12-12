@@ -2,13 +2,16 @@
   "name": "railway-test",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://james-j-han.github.io/railway-test",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite dist"
+    "start": "vite dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
